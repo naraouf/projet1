@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+      <div id="body1">
+        <h1 id="premier-titre"> The FigthingArts Academy</h1>
+        <audio preload="auto" id="player_audio_font" autoplay volume="0.1">
+        </audio>
+        <audio preload="auto" id="player_couplibre" autoplay>
+        </audio>
+        <audio preload="auto" id="player_coupatteint" autoplay>
+        </audio>
+        <audio preload="auto" src="audio/capcom.wav" id="player_audio" autoplay>
+        </audio>
+        <form id="formulaire1">
+            <button type "submit" id="start-game" title="Vous pouvez utiliser les touches clavier(Q,Z,S,D) et (Up,Down,Right,Left) pour jouer :-)">
+                <span>Start Game</span>
+            </button>
+
+            <!-- <label for="name">NOM JOUEUR 1 </label></section>  -->
+            <input type="text" name="name" id="name1" placeholder="name player01">
+            <!-- <label for="name">NOM JOUEUR 2 </label></section>  -->
+            <input type="text" name="name" id="name2" placeholder="name player02">
+
+        </form>
+
+
+
+    </div>
+    <div id="body2">
+
+        <div id="entete" class="element">
+
+            <h1>The FigthingArts Academy</h1>
+
+
+            <form id="formulaire" style="display:none">
+
+                <button id="sub" type="submit">Reload Game</button>
+                <!-- <label for="name">Nouvelle partie  </label></section> -->
+                <!-- <input type="text" name="name" id="name" placeholder="name" required> -->
+
+
+
+            </form>
+        </div>
+
+        <div id="ring" class="element">
+            <div id="lesbarres">
+
+                <div id="lesbarresG">
+                    <div class="niv_arriereG">
+                        <input id="niveauG1" type="texte" value="">
+                    </div>
+                    <div class="niv_arriereG">
+                        <input id="niveauG2" type="texte" value="">
+                    </div>
+
+                    <span class="nomjoueur" id="nomjoueur1">
+                        Player01
+                    </span>
+
+                </div>
+                <div id="milieu">
+                    <fieldset id="afficheur">
+
+                        <input type="text" id="sec" value="120" size=2>
+                        </p>
+
+                    </fieldset>
+                    <fieldset>
+                        <span>&nbsp;&nbsp;&nbsp; VS</span>
+                    </fieldset>
+                </div>
+                <div id="lesbarresD">
+                    <div class="niv_arriereD">
+                        <input id="niveauD1" type="texte" value="">
+                    </div>
+                    <div class="niv_arriereD">
+                        <input id="niveauD2" type="texte" value="">
+                    </div>
+                    <div id="bloc_nomD" >
+                    <div class="nomjoueur" id="nomjoueur2" >
+                        Player02
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <div id="espacecombat">
+                <div id="blockG" style="left:350px;position:absolut">
+                    <img id="combatant_G" src="img/persG/stance.gif" alt="">
+                </div>
+                <div id="blockD" style="left:1280px;position:absolut">
+                    <img id="combatant_D" src="img/persD/stance.gif" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="control" class="element">
+            <div class="gauche">
+
+                <div>
+                    <input type="button" value="reculer" id="reculerG" name="reculerG">
+
+                </div>
+                <div class="butcentral">
+                    <!-- <input type="button" value="jump" id="jumpG" name="jumpG"> -->
+                    <input type="button" value="Attaque1" id="gauche" name="gauche">
+                    <input type="button" value="Attaque2" id="attaqueG2">
+                </div>
+                <div>
+                    <input type="button" value="avancer" id="avancerG" name="avancerG">
+                </div>
+
+
+            </div>
+            <div class="droite">
+                <div>
+                    <input type="button" value="avancer" id="avancerD" name="avancerD">
+                </div>
+                <div class="butcentral">
+                    <input type="button" value="Attaque1" id="droite" name="droite">
+                    <input type="button" value="Attaque2" id="attaqueD2">
+                </div>
+                <div>
+                    <input onclick="myreward()" type="button" value="reculer" id="reculerD" name="reculerD">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="personnage.js"></script>
+    <script type="text/javascript" src="controleur.js"></script>
+    <script type="text/javascript" src="view.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>

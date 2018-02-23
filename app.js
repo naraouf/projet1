@@ -1,0 +1,1 @@
+let ctrl = new Controler();

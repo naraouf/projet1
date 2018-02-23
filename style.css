@@ -1,0 +1,339 @@
+html { /*///////////////*/
+    -ms-zoom: 0.70;
+    -moz-transform: scale(0.70);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.70);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.70);
+    -webkit-transform-origin: 0 0;
+    
+    
+}
+body{
+    
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 150% 110%; 
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-left: 11px;
+    
+}
+#body1{
+     
+    display: block;
+    height: 900px;
+    background-size: cover;
+    width: 142%;
+}
+#start-game{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    align-items: center;
+    margin-left: 44%;
+    border-radius: 100px;
+    background-image: url("img/start.jpg");
+    -webkit-box-shadow: 0px 9px 0px #84261a;
+    -moz-box-shadow: 0px 9px 0px #84261a;
+    box-shadow: 0px 9px 0px #84261a;
+    
+}
+#start-game:active{
+    -webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    position:relative;
+    top:7px;
+}
+#start-game span{
+    font-family: inherit;
+    font-size: xx-large;
+}
+#premier-titre{
+    opacity: 182;
+    margin-left: 37%;
+    margin-top: 100PX;
+    margin-bottom: 100PX;
+    font-family: Cursive;
+    box-shadow: 1px 1px 30px yellow;
+    width: 540px;
+    color: red;
+    border-radius: 10px;
+    -webkit-animation-name: titre;
+    -webkit-animation-duration: 2.5s; 
+    -webkit-animation-iteration-count:1;
+}
+@-webkit-keyframes titre {
+    0%{   
+        box-shadow: 1px 1px 100px yellow;
+        color: rgb(255, 217, 0);
+    }
+    25%{
+        box-shadow: 1px 1px 80px yellow;
+        color: rgb(21, 255, 0);
+    }
+    50%{
+        box-shadow: 1px 1px 60px yellow;
+        color: rgb(0, 255, 242);
+    }
+    75%{
+        box-shadow: 1px 1px 40px yellow;
+        color: rgb(4, 0, 255);
+    }
+    100%{
+        box-shadow: 1px 1px 30px yellow;
+        color: red;
+    }
+    }
+
+
+#body2{
+    display:none;
+    width: 143%;  /*///////////////*/
+}
+
+
+
+#entete{
+    height: 90px;
+    background-image: url("img/header_02.png");
+    background-repeat: no-repeat;
+    background-size: 69% 100%; 
+    position: center;
+    display: flex;
+    flex: row;
+    justify-content: space-between
+}
+h1{
+    opacity: 0;
+}
+
+#formulaire{
+    margin-right: 100px;
+}
+#sub{
+    
+        margin-top: 20px;
+        width: 300px;
+        height: 55PX;
+        border-radius: 100px;
+        background-color: yellow;
+        align-items: center;    
+        background-image: url("img/start.jpg");
+        -webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;
+        -webkit-animation-name: clignote;
+        -webkit-animation-duration: 1s; 
+        -webkit-animation-iteration-count:infinite; 
+}
+@-webkit-keyframes clignote {
+    0%{background-image: url("img/start.jpg");
+        -webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;    
+    }
+    50%{background-image: url("img/start2.jpeg");
+        -webkit-box-shadow: 0px 9px 0px #F8A402;
+        -moz-box-shadow: 0px 9px 0px #F8A402;
+        box-shadow: 0px 9px 0px #F8A402;
+    }
+    100%{background-image: url("img/start.jpg");
+        -webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;
+    }
+    }
+
+
+
+
+#ring{
+    background-image: url("img/images.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+    height: 700px;
+    margin-right: 20px;
+
+}
+
+#lesbarres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+#lesbarresG{
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+}
+.niv_arriereG{
+    height: 25px;
+    width: 460px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(247, 243, 11));    
+    border-radius: 10px;
+}
+
+#niveauG1{
+    background-color: green;
+    width: 100%;
+    border-radius:10px;
+    height: 25px;
+    
+}
+#niveauG2{
+    background-color:blue;
+    width: 100%;
+    border-radius:10px;
+    height: 25px;
+}
+#lesbarresD{
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    
+}
+.niv_arriereD{
+    height: 25px;
+    width: 460px;
+    background-image: linear-gradient(to right,  rgb(247, 243, 11), rgb(255, 0, 0));    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#niveauD1{
+    background-color: green;
+    width: 100%;
+    border-radius:10px;
+    
+}
+#niveauD2{
+    background-color: blue;
+    width: 100%;
+    border-radius:10px;
+}
+.nomjoueur{
+    font-size:30px ;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px white;
+}
+#bloc_nomD{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+#afficheur{
+    background-color: gray;
+}
+#sec{
+    
+}
+
+#espacecombat{
+    height: 90%;
+    
+    
+}
+ #blockG{
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 0px;
+    top: 480px;
+    left: 350px;
+    z-index: 1;    
+    position: absolute;
+    /* padding-left: 200px;     */
+    background-position: center;
+ }
+ #combatant_G{
+    block-size: 253px;
+    z-index: 1;
+ }
+
+ #blockD{     
+   
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 0px;
+    top: 480px;
+    left: 1280px;
+    z-index: 1;
+    position: absolute;
+    /* padding-left: 200px;   */
+    background-position: center;
+/* background-image: url("img/Kim_sprite.gif");*/
+/*background-size: 100%;*/
+}
+
+#combatant_D{
+    block-size: 253px;
+    padding-left: 90px;
+    z-index: 1;
+    
+ }
+
+
+
+
+#control{
+
+    display: flex;   
+    justify-content: space-around;
+    align-items: end;
+   
+}
+.gauche{
+width: 272px;
+display: flex;
+
+}
+.droite{
+width: 272px;
+display:flex;
+}
+
+#control input[type=button]{
+    position: relative;
+    width: 100px;
+    color: #FFF;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    border-radius: 5px;
+    border: solid 6px #D94E3B;
+    background: #cb3b27;
+    text-align: center;
+    padding: 14px 17px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-box-shadow: 0px 9px 0px #84261a;
+    -moz-box-shadow: 0px 9px 0px #84261a;
+    box-shadow: 0px 9px 0px #84261a;
+    margin-left: 12px;
+    margin-right: 1px;
+    margin-bottom: 25px;
+    height: 10px;
+    padding-bottom: 26px;
+    padding-top: 2px;
+}
+
+
+
+#control input[type=button]:active{
+    -webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    position:relative;
+    top:20px;
+}
+.butcentral{
+    margin-bottom: 0px;
+
+}
